@@ -52,6 +52,15 @@ class Home extends CI_Controller {
 	}
 
 
+	public function register()
+	{
+		$data['head'] = $this->head;
+		$data['foot'] = $this->foot;
+		$data['left'] = $this->left;
+		$this->load->view('register', $data);
+	}
+
+
 	public function add_subject()
 	{
 		$data['head'] = $this->head;
