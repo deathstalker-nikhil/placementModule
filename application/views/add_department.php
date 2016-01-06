@@ -49,48 +49,7 @@
             </div>
             <!-- Content Column -->
             <div class="col-md-9">
-                <h3>ADD COMPANY</h3>
-                <form method="post" action="/home/addCoupon">
-                <div class="col-md-12">
-                    <div class="form-group">
-                        <label>Company Name</label>
-                        <input class="form-control" name="company_name" placeholder="Company Name">
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="form-group">
-                        <label>Year of Establishment</label>
-                        <input class="form-control" name="company_year_of_establishment" placeholder="Year of Establishment">
-                    </div>
-                </div>
-                 <div class="col-md-8">
-                    <div class="form-group">
-                        <label>Founder</label>
-                        <input class="form-control" name="company_founder" placeholder="Company Founder">
-                    </div>
-                </div>
-
-
-
-
-                <div class="col-md-12">
-                    <div class="form-group">
-                        <label>Company Details</label>
-                        <textarea name="company_details" style="height: 250px;" class="form-control" placeholder="Company Details"></textarea>
-                    </div>
-                </div>
-
-
-
-                <div class="col-md-12">
-                    <div class="form-group">
-
-                         <input type="hidden" name="<?php echo $csrf_token_name ?>" value="<?php echo $csrf_token ?>">
-                        <button type="submit" class="btn" style="background: #C80237; color: #fff; float: right;">Add Company</button>
-                    </div>
-                </div>
-
-                </form>
+              
                 <h3>ADD CAMPUS DRIVE</h3>
                 <form method="post" action="/home/addCoupon">
                 <div class="col-md-12">

@@ -49,96 +49,42 @@
             </div>
             <!-- Content Column -->
             <div class="col-md-9">
-                <h3>ADD COMPANY</h3>
+                <h3>ADD SUBJECT</h3>
                 <form method="post" action="/home/addCoupon">
-                <div class="col-md-12">
+                <div class="col-md-6">
                     <div class="form-group">
-                        <label>Company Name</label>
-                        <input class="form-control" name="company_name" placeholder="Company Name">
+                        <label>Subject Code</label>
+                        <input class="form-control" name="subject_code" placeholder="Subject Code">
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-6">
                     <div class="form-group">
-                        <label>Year of Establishment</label>
-                        <input class="form-control" name="company_year_of_establishment" placeholder="Year of Establishment">
-                    </div>
-                </div>
-                 <div class="col-md-8">
-                    <div class="form-group">
-                        <label>Founder</label>
-                        <input class="form-control" name="company_founder" placeholder="Company Founder">
-                    </div>
-                </div>
-
-
-
-
-                <div class="col-md-12">
-                    <div class="form-group">
-                        <label>Company Details</label>
-                        <textarea name="company_details" style="height: 250px;" class="form-control" placeholder="Company Details"></textarea>
-                    </div>
-                </div>
-
-
-
-                <div class="col-md-12">
-                    <div class="form-group">
-
-                         <input type="hidden" name="<?php echo $csrf_token_name ?>" value="<?php echo $csrf_token ?>">
-                        <button type="submit" class="btn" style="background: #C80237; color: #fff; float: right;">Add Company</button>
-                    </div>
-                </div>
-
-                </form>
-                <h3>ADD CAMPUS DRIVE</h3>
-                <form method="post" action="/home/addCoupon">
-                <div class="col-md-12">
-                    <div class="form-group">
-                        <label>Company Name</label>
-                        <select class="form-control" name="company_name" placeholder="Company Name">
-                            <option>Tata Consultancy Services Ltd</option>
-                            <option>Wipro</option>
+                        <label>Batch</label>
+                        <select class="form-control" name="batch">
+                            <option value="2012-2016">2012-2016</option>
+                            <option value="2013-2017">2013-2017</option>
+                            <option value="2014-2018">2014-2018</option>
+                            <option value="2015-2019">2015-2019</option>
                         </select>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="form-group">
-                        <label>Date of Drive-From</label>
-                        <input type="date" class="form-control" name="company_year_of_establishment" placeholder="Year of Establishment">
-
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="form-group">
-                        <label>Date of Drive-To</label>
-                        <input type="date" class="form-control" name="company_year_of_establishment" placeholder="Year of Establishment">
-
-                    </div>
-                </div>
-
-
-
-
-
                 <div class="col-md-12">
                     <div class="form-group">
-                        <label>Drive Details</label>
-                        <textarea name="company_details" style="height: 250px;" class="form-control" placeholder="Drive Details"></textarea>
+                        <label>Subject Name</label>
+                        <input class="form-control" name="subject_name" placeholder="Subject Name">
                     </div>
                 </div>
-
-                <div class="col-md-12">
-                    <div class="form-group">
-                        <label>Involved Department(s)</label>
-                        <ul>
-                            <li style="list-style:none; padding:auto;"><input type="checkbox" name="departments"> Department of Computer Science</li>
-                            <li style="list-style:none;"><input type="checkbox" name="departments"> Department of Information Technology</li>
-                             <li style="list-style:none;"><input type="checkbox" name="departments"> Department of Mechanical Engineering</li>
-                              <li style="list-style:none;"><input type="checkbox" name="departments"> Department of Civil Engineering</li>
-                               <li style="list-style:none;"><input type="checkbox" name="departments"> Department of Instrumental and Control</li>
-                        </ul>
-                    </div>
+              
+                 <div class="col-md-12">
+                   <div class="form-group">
+                       <label>Department</label>
+                       <select class="form-control" name="department">
+                           <option value="2012-2016">Department of Computer Science</option>
+                           <option value="2013-2017">Department of Information and Technology</option>
+                           <option value="2014-2018">Deparment of Civil Engineering</option>
+                           <option value="2015-2019">Department of Instrumentation and Control</option>
+                       </select>
+                   </div>
                 </div>
 
 
@@ -146,11 +92,12 @@
                     <div class="form-group">
 
                          <input type="hidden" name="<?php echo $csrf_token_name ?>" value="<?php echo $csrf_token ?>">
-                        <button type="submit" class="btn" style="background: #C80237; color: #fff; float: right;">Add Company</button>
+                        <button type="submit" class="btn" style="background: #C80237; color: #fff; float: right;">Add Subject</button>
                     </div>
                 </div>
 
                 </form>
+
 
             </div>
 
