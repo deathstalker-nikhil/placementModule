@@ -47,7 +47,7 @@
             <div class="col-md-12">
 
                 <h3>USER REGISTERATION</h3>
-                <form method="post" action="/home/addCoupon">
+                <form method="post" action="user_registeration">
                   <div class="col-md-4">
                       <div class="form-group">
                           <label>University Roll Number</label>

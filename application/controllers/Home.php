@@ -60,6 +60,33 @@ class Home extends CI_Controller {
 		$this->load->view('register', $data);
 	}
 
+	public function user_registeration()
+	{
+		echo "hello";
+		die;
+		$university_roll_number = '';
+
+
+		if ($x = $this->input->post('university_roll_number')) {
+			$university_roll_number = $x;
+		}
+
+		echo $university_roll_number;
+
+		// 	$data = array(
+		// 		'coupon_id' => $coupon_id,
+		// 		'user_id' => $user_id,
+		// 		'coupon_code' => $coupon_code
+		// 		);
+		// $result = $this->data_lib->addUserCoupon($data);
+		// if ($result) {
+		// 	redirect(base_url('Home/user_coupons'));
+		// }
+		// else {
+		// 	die("Some error Occured..:(");
+		// }
+
+	}
 
 	public function add_subject()
 	{
