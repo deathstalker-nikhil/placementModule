@@ -9,14 +9,14 @@
     <title>Placement Module|JSSATEN</title>
     <link href="/assets/css/bootstrap.css" rel="stylesheet">
     <link href="/assets/css/agency.css" rel="stylesheet">
-    <link href="/assets/css/etalage.css" rel="stylesheet">
+
     <link href="/assets/css/bootstrap-social.css" rel="stylesheet">
     <link href="/assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="/assets/css/dealBox.css">
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -27,7 +27,7 @@
 <script type="text/javascript">stLight.options({publisher: "3e8a7408-39c1-4a4a-826d-461709853454", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
 </head>
 <body id="page-top" class="index">
- 
+
   <div class="container">
     <div class="row">
       <div class="col-lg-12">
@@ -40,7 +40,7 @@
        <h4>C-20/1, Sector 62, Noida, Uttar Pradesh</h4>
         </div>
 
-        
+
 
                 </div>
             </div>
@@ -63,21 +63,21 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav menu">
-                   
+
                         <li>
                             <a class="page-scroll" href="#">Home</a>
-                      
+
                         </li>
                          <li>
                             <a class="page-scroll" href="#">Departments</a>
-                      
+
                         </li>
 
                          <li>
                             <a class="page-scroll" href="#">Placement Cell</a>
-                      
+
                         </li>
-                   
+
                 </ul>
             </div>
             <!-- /.navbar-collapse -->

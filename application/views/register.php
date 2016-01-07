@@ -127,7 +127,7 @@
               <div class="col-md-3">
                  <div class="form-group">
                      <label>10+2 Course</label>
-                     <select class="form-control" name="course_after_10">
+                     <select class="form-control" name="course_after_10" id="course_after_10">
                         <option value="Intermediate">Intermediate</option>
                         <option value="Diploma">Diploma</option>
                      </select>
@@ -160,7 +160,7 @@
                </div>
            </div>
          </div>
-         <div>
+         <div id="Intermediate">
           <label>Class XII/Intermediate Details</label>
           <br>
           <div class="col-md-2">
@@ -187,7 +187,7 @@
            </div>
        </div>
      </div>
-     <div>
+     <div id="Diploma" style="display:none;">
       <label>Diploma Details</label>
       <br>
       <div class="col-md-2">
@@ -336,34 +336,22 @@
 <script src="/assets/js/jqBootstrapValidation.js"></script>
 <script src="/assets/js/contact_me.js"></script>
 <script src="/assets/js/agency.js"></script>
-<script>
-    $(document).ready(function(){
-        setSubRegionsDropDown();
-        setSubcategoriesDropDown();
-        if($('#message').val()!=''){
-            $('#msgModal').find('.modal-body').html($('#message').val());
-            $('#msgModal').modal('toggle');
-        }
-    });
-    function setSubRegionsDropDown () {
-        var subRegions = $.parseJSON($('#regions option:selected').attr('data-areas'));
-        var subRegionsHtml = '';
-        $.each(subRegions, function(index,value){
-            subRegionsHtml += '<option>'+value+'</option>';
-        });
-        subRegionsHtml +='<option value="any">Any</option>';
-        $('#subRegions').html(subRegionsHtml);
-    }
-    function setSubcategoriesDropDown () {
-        var subcategories = $.parseJSON($('#categories option:selected').attr('data-subcategories'));
-        var subcategoriesHtml = '';
-        $.each(subcategories, function(index,value){
-            subcategoriesHtml += '<option>'+value+'</option>';
-        });
-        subcategoriesHtml += '<option value="any">Any</option>'
-        $('#subcategories').html(subcategoriesHtml);
-    }
-</script>
+
+<script type="text/javascript">
+     $('#course_after_10').on('change',function(){
+         if( $(this).val()==="Diploma"){
+             $("#Diploma").show();
+             $("#Intermediate").hide();
+         }
+         else{
+            $("#Intermediate").show();
+             $("#Diploma").hide();
+
+         }
+     });
+
+ </script>
+
 <script src="/assets/js/custom.js"></script>
 </body>
 </html>
