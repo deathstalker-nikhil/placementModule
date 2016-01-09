@@ -80,6 +80,8 @@
                                           <tr>
                                               <th>Deal ID</th>
                                               <th>Coupon Code</th>
+                                              <th>Edit</th>
+                                              <th>Delete</th>
 
                                           </tr>
                                       </thead>
@@ -88,6 +90,8 @@
                                           <tr class="odd gradeX">
                                               <td>Hello</td>
                                               <td>Hello</td>
+                                              <td>Edit</td>
+                                              <td>Delete</td>
 
                                           </tr>
 
